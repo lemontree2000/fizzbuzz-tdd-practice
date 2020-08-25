@@ -1,16 +1,16 @@
 export default (number) => {
-    let outString = ''
-    if (String(number).includes('3')) {
+    let result = ''
+    if (String(number).includes(3)) {
         return 'Fizz'
     }
     if (number % 3 === 0) {
-        outString += 'Fizz'
+        result += 'Fizz'
     }
     if (number % 5 === 0) {
-        outString += 'Buzz'
+        result += 'Buzz'
     }
     if (number % 7 === 0) {
-        outString += 'Whizz'
+        result += 'Whizz'
     }
-    return outString
+    return result
 }
