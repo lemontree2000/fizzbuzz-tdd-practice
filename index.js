@@ -6,11 +6,11 @@ export default (number) => {
     if (number % 3 === 0) {
         result += 'Fizz'
     }
-    if (number % 5 === 0) {
+    if (number % 5 ===0) {
         result += 'Buzz'
     }
-    if (number % 7 === 0) {
-        result += 'Whizz'
+    if (number % 7 ===0 ) {
+        result += 'Whizz' 
     }
     return result
 }
