@@ -1,5 +1,5 @@
 export default (number) => {
-    let result = ''
+    let result = '';
     if (String(number).includes(3)) {
         return 'Fizz'
     }
