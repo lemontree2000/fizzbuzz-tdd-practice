@@ -4,9 +4,22 @@ export default (number) => {
         return 'Fizz'
     }
 
+    if (number % 5 === 0 && number % 3 === 0 && number % 7 === 0) {
+        return 'FizzBuzzWhizz'
+    }
+
     if (number % 5 === 0 && number % 3 === 0) {
         return 'FizzBuzz'
-    }
+    }    
+
+    if (number % 5 === 0 && number % 7 === 0) {
+        return 'BuzzWhizz'
+    }    
+
+    if (number % 3 === 0 && number % 7 === 0) {
+        return 'FizzWhizz'
+    }    
+
     if (number % 3 === 0) {
         return 'Fizz'
     }
@@ -19,4 +32,5 @@ export default (number) => {
         return 'Whizz'
     }
 
+    return number
 }
