@@ -1,20 +1,19 @@
 export default (number) => {
+    let result = ''
     if (String(number).includes(3)) {
         return 'Fizz'
     }
 
     if (number % 3 === 0) {
-        return 'Fizz'
+        result += 'Fizz'
     }
 
     if (number % 5 === 0) {
-        return 'Buzz'
+        result += 'Buzz'
     }
 
     if (number % 7 === 0) {
-        return 'Whizz'
+        result += 'Whizz'
     }
-    if (number % 7 === 0) {
-        return 'Whizz'
-    }
+    return result === '' ? number : result
 }
