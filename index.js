@@ -1,7 +1,7 @@
 export default (number) => {
     let result = ''
     if (String(number).includes(3)) {
-        result += 'Fizz'
+        return 'Fizz'
     }
 
     if (number % 3 === 0) {
@@ -15,5 +15,6 @@ export default (number) => {
     if (number % 7 === 0) {
         result += 'Whizz'
     }
+
     return result === '' ? number : result
 }
