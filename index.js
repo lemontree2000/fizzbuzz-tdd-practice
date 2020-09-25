@@ -15,6 +15,5 @@ export default (number) => {
     if (number % 7 === 0) {
         result += 'Whizz'
     }
-
     return result === '' ? number : result
 }
